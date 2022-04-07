@@ -23,7 +23,7 @@ jobs:
           node-version: 17
 
       - name: 📥 Download deps
-        run: npm install
+        run: npm ci
 
       - name: 🔬 Lint
         run: npm run lint
