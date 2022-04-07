@@ -24,6 +24,8 @@ jobs:
 
       - name: 📥 Download deps
         uses: bahmutov/npm-install@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
 
       - name: 🔬 Lint
         run: npm run lint
