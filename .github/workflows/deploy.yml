@@ -23,7 +23,7 @@ jobs:
           node-version: 17
 
       - name: 📥 Download deps
-        uses: ng-easy/npm-install@v1
+        run: npm install
 
       - name: 🔬 Lint
         run: npm run lint
